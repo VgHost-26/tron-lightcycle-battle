@@ -33,6 +33,7 @@ uniform_int_distribution<int> dist_2(1,10);
 
 #include "systemFunctions.h"
 #include "gameFunctions.h"
+#include "menuFunctions.h"
 #include "player.h"
 
     
@@ -194,7 +195,7 @@ int main(){
             updateScoreBoard(p1,p2);
 
             setCursorPosition(sizeX*2+4,10);
-            cout<<"Naci˜nij by kontynuaowa†";
+            cout<<"Naci˜nij by kontynuowa†";
             _getch();
         }
         
@@ -209,7 +210,7 @@ int main(){
         p1.resetLifes();
         p2.resetLifes();
         
-        while(!valid){
+       /* while(!valid){
             setCursorPosition(sizeX*2+4,10);
             cout<<"                        ";
             setCursorPosition(sizeX*2+4,10);
@@ -225,6 +226,13 @@ int main(){
             }else{
                 valid=false;
             }
+        }*/
+        
+        clearLine(sizeX*2+4,10,24);
+        if(confirm(sizeX*2 + 12, 10, 14, 15, 0, "Jeszcze raz")){
+            tnb=1;
+        }else{
+            tnb=0;
         }
     }
    

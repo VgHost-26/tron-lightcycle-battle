@@ -97,7 +97,7 @@ int main(){
 
     
     generateTable(table, 4, middleCalc(winWidth, 14));
-    buttonHelp(arrows, 3);
+    buttonHelp(arrows, 3, winHeight);
 
 
     
@@ -129,7 +129,7 @@ int main(){
                 setCursorPosition(0,14);
                 
                 generateTable(table, 2, middleCalc(winWidth, 14));
-                buttonHelp(arrows4, 4);
+                buttonHelp(arrows4, 4, winHeight);
                 select(menuList2, 2, selected, defCol, 9, middleCalc(winWidth, 10));
                 selected=0;
                 while(1){
@@ -163,7 +163,7 @@ int main(){
                                 if(i==0)playerSetList[0]="  Gracz 1  ";
                                 if(i==1)playerSetList[0]="  Gracz 2  ";
                                 
-                                buttonHelp(arrows2, 1);
+                                buttonHelp(arrows2, 1, winHeight);
                                 
                                 selected=1;
                                 select(playerSetList, 2, 1, 13, selected, middleCalc(winWidth, 10));
@@ -240,7 +240,7 @@ int main(){
                                 
 
                                 hideCursor();
-                                buttonHelp(arrows3,4);
+                                buttonHelp(arrows3,4, winHeight);
                                 playerSetList[0]=playerName;
                                 playerNameTmp=playerName;
                                 setCursorPosition(middleCalc(winWidth, -10),15);
@@ -313,7 +313,7 @@ int main(){
                             SetConsoleTextAttribute(hConsole,defCol);
 
                             generateTable(table, 3,  middleCalc(winWidth, 14));
-                            buttonHelp(arrows2, 1);
+                            buttonHelp(arrows2, 1, winHeight);
 
                            // playerSetList[0]="   Nazwa   ";
                             selected=1;
@@ -361,7 +361,7 @@ int main(){
                             cout<<"  ";
                             
                             hideCursor();
-                            buttonHelp(arrows3,4);
+                            buttonHelp(arrows3,4, winHeight);
                             playerSetList[0]=playerName;
                             playerNameTmp=playerName;
                             setCursorPosition(middleCalc(winWidth, -10),15);

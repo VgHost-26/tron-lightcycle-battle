@@ -91,6 +91,7 @@ int main(){
     }
     system("pause"); 
     plik.close();
+    system("start menu.exe");
 
     return 0;
 }

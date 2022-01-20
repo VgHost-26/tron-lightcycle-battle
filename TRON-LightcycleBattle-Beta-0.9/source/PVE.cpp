@@ -34,6 +34,7 @@ uniform_int_distribution<int> randColor(1,12);
 
 #include "systemFunctions.h"
 #include "gameFunctions.h"
+#include "menuFunctions.h"
 #include "player.h"
 #include "AI.h"
 
@@ -191,7 +192,7 @@ int main(){
         p1.resetLifes();
         p2.resetLifes();
         
-        while(!valid){
+        /*while(!valid){
             setCursorPosition(sizeX*2+4,10);
             cout<<"                        ";
             setCursorPosition(sizeX*2+4,10);
@@ -207,6 +208,12 @@ int main(){
             }else{
                 valid=false;
             }
+        }*/
+        clearLine(sizeX*2+4,10,24);
+        if(confirm(sizeX*2 + 12, 10, 14, 15, 0, "Jeszcze raz")){
+            tnb=1;
+        }else{
+            tnb=0;
         }
     }
    
