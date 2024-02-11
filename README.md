@@ -1,2 +1,4 @@
 # tron-lightcycle-battle
-this is simple game based on the game from arcade machines from original TRON movie
+I've recreated classic arcade machine game - TRON
+
+To run the game download the files and run **TRON_Launcher.exe** 
